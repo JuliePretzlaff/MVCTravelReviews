@@ -1,0 +1,122 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #e5cdcd;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+    margin-top: 5%;
+}
+
+h1#title {
+    text-align: center;
+}
+
+div.row.options {
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.navbar-inverse {
+    background-color: #b77575 !important;
+    border-color: #b77575 !important;
+}
+
+navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 0px !important;
+}
+
+a.navbar-brand {
+    color: white !important;
+    font-family: 'Sansita', sans-serif !important;
+}
+
+a {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+    a:hover {
+        background-color: grey !important;
+    }
+
+    a.btn.btn-default {
+        color: #b77575 !important;
+        background-color: antiquewhite !important;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+        a.btn.btn-default:hover {
+            color: white !important;
+            background-color: #b77575 !important;
+            font-weight: bold;
+        }
+
+li {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+    li:hover {
+        font-weight: bold;
+        color: purple;
+    }
+
+.thumbnail {
+    background-color: antiquewhite;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Sansita', sans-serif;
+}
+
+a.nonnav-link {
+    font-weight: bold;
+    color: #b77575 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    a.nonnav-link:hover {
+        font-weight: bold;
+        color: grey !important;
+        background-color: transparent !important;
+        text-decoration: none !important;
+    }
+
+p.bold {
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Gentium Basic', serif;
+}

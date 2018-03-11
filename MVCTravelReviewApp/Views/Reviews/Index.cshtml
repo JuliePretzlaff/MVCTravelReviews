@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MVCTravelReviewApp.Models.Review>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<h1>Reviews</h1>
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-md-4 col-xs-12">
+            <div class="thumbnail">
+
+                <h2>
+                    @Html.DisplayFor(modelItem => item.BusinessName)
+                </h2>
+
+                <p>@Html.DisplayNameFor(model => model.Location):  @Html.DisplayFor(modelItem => item.Location)</p>
+                <p>@Html.DisplayNameFor(model => model.Category.Type): @Html.DisplayFor(modelItem => item.Category.Type)</p>
+                @*<p>@Html.DisplayNameFor(model => model.WouldRecommend): @Html.DisplayFor(modelItem => item.WouldRecommend)</p>
+        <p>@Html.DisplayNameFor(model => model.StarRating): @Html.DisplayFor(modelItem => item.StarRating)</p>
+        <p>@Html.DisplayNameFor(model => model.Comments): @Html.DisplayFor(modelItem => item.Comments)</p>*@
+                <p>
+                    @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "nonnav-link" })
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+
+<p>
+    @*@Html.ActionLink("Create New", "Create")*@
+    <a class="nonnav-link" href="/Movies/Create">Create New</a>
+
+</p>
