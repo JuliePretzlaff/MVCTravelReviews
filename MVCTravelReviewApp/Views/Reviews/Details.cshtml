@@ -6,61 +6,27 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Review</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Type)
-        </dt>
+<div class="row">
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Type)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.BusinessName)
-        </dt>
+    <div class="col-md-4 col-xs-12">
+        <div class="thumbnail">
 
-        <dd>
-            @Html.DisplayFor(model => model.BusinessName)
-        </dd>
+            <h2>
+                @Html.DisplayFor(model => Model.BusinessName)
+            </h2>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.WouldRecommend)
-        </dt>
+            <p class="bold">@Html.DisplayNameFor(model => model.Location):</p><p>  @Html.DisplayFor(modelItem => Model.Location)</p>
+            <p class="bold">@Html.DisplayNameFor(model => model.Category.Type):</p><p> @Html.DisplayFor(modelItem => Model.Category.Type)</p>
+            <p class="bold">@Html.DisplayNameFor(model => model.WouldRecommend):</p><p> @Html.DisplayFor(modelItem => Model.WouldRecommend)</p>
+            <p class="bold">@Html.DisplayNameFor(model => model.StarRating):</p><p> @Html.DisplayFor(modelItem => Model.StarRating)</p>
+            <p class="bold">@Html.DisplayNameFor(model => model.Comments):</p><p> @Html.DisplayFor(modelItem => Model.Comments)</p>
 
-        <dd>
-            @Html.DisplayFor(model => model.WouldRecommend)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.StarRating)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.StarRating)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Comments)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Comments)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Location)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Location)
-        </dd>
-
-    </dl>
+        </div>
+    </div>
 </div>
+
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }, new { @class = "nonnav-link" }) |
+    <a class="nonnav-link" href="/Reviews">Back to All Reviews</a>
 </p>

@@ -20,9 +20,7 @@
 
                 <p>@Html.DisplayNameFor(model => model.Location):  @Html.DisplayFor(modelItem => item.Location)</p>
                 <p>@Html.DisplayNameFor(model => model.Category.Type): @Html.DisplayFor(modelItem => item.Category.Type)</p>
-                @*<p>@Html.DisplayNameFor(model => model.WouldRecommend): @Html.DisplayFor(modelItem => item.WouldRecommend)</p>
-        <p>@Html.DisplayNameFor(model => model.StarRating): @Html.DisplayFor(modelItem => item.StarRating)</p>
-        <p>@Html.DisplayNameFor(model => model.Comments): @Html.DisplayFor(modelItem => item.Comments)</p>*@
+               
                 <p>
                     @Html.ActionLink("Details", "Details", new { id = item.ReviewID }, new { @class = "nonnav-link" })
                 </p>
