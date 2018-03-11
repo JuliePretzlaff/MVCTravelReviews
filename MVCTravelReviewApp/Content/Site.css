@@ -25,20 +25,15 @@ textarea {
     margin-top: 5%;
 }
 
-h1#title {
-    text-align: center;
-}
 
-div.row.options {
+
+/*div.row.options {
     text-align: center;
     margin-top: 5%;
-}
+}*/
 
-footer {
-    text-align: center;
-    font-size: 1rem;
-}
 
+/*nav bar styling*/
 .navbar-inverse {
     background-color: #b77575 !important;
     border-color: #b77575 !important;
@@ -54,6 +49,7 @@ a.navbar-brand {
     font-family: 'Sansita', sans-serif !important;
 }
 
+/*link command button styling*/
 a {
     color: white !important;
     font-family: Arial, Helvetica, sans-serif !important;
@@ -86,20 +82,6 @@ li {
         color: purple;
     }
 
-.thumbnail {
-    background-color: antiquewhite;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Pragati Narrow', sans-serif;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Sansita', sans-serif;
-}
-
 a.nonnav-link {
     font-weight: bold;
     color: #b77575 !important;
@@ -112,6 +94,46 @@ a.nonnav-link {
         background-color: transparent !important;
         text-decoration: none !important;
     }
+
+
+/*thumbnail styling:*/
+.thumbnail {
+    background-color: antiquewhite;
+}
+
+/*text styling*/
+h2 {
+    text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #b77575;
+    text-shadow: 1px 1px black;
+}
+h3 {
+    text-align: center;
+    font-family: 'Pragati Narrow', sans-serif;
+    color: #b77575;
+    text-shadow: 1px 1px black;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Sansita', sans-serif;
+    color: grey;
+    text-shadow: 1px 1px black;
+}
+
+    h1#title {
+        text-align: center;
+        color: antiquewhite;
+        text-shadow: 1px 1px black;
+        margin-bottom: 25%;
+    }
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    color: antiquewhite;
+}
 
 p.bold {
     font-weight: bold;
